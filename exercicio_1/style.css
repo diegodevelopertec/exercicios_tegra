@@ -1,0 +1,97 @@
+body{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+   background-color: rgba(0, 0, 0, 0.785);
+}
+.container{
+    font-size: 18px;
+    padding: 15px;
+    background-color: rgb(7, 77, 115);
+   width: 500px;
+   margin-top: 100px;
+   display: flex;
+   flex-direction: column;
+   padding: 26px;
+  color: white;
+  border-radius: 10px;
+  box-shadow:  0 0 10px #eee;
+ 
+}
+
+
+.cx-btns{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+
+    padding: 20px 10px;
+    width: 80%;
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(60, 153, 60);
+    color: white;
+}
+button:hover{
+    background-color: rgb(36, 188, 36);
+    cursor: pointer;
+}
+
+.btn-reset{
+    flex: 1;
+    margin-left: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 40px;
+   padding: 25px;
+   border-radius: 10px;
+  
+}
+
+.btn-reset:hover{
+cursor: pointer;
+background-color: rgb(212, 215, 212);
+}
+.cx-inputs{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    background-color: white;
+    padding: 13px;
+    margin-top: 10px;
+    text-align: center;
+    border: none;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+.title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input:focus{
+    outline:3px solid  rgb(139, 141, 140);
+}
+
+.res{
+    margin-top:36px;
+text-align: center;
+}
+
+@media screen and (max-width:900px){
+    .container{
+        width: 90vw;
+    }
+    .title{
+        min-width: 13px;
+    }
+}
