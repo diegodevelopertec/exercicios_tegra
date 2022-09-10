@@ -1,0 +1,140 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(3, 16, 44);
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serifs;
+    color: #aaa;
+}
+
+.container-app{
+   width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.container{
+    background-color: #415575;
+    max-width: 600px;
+    min-width: 300px;
+    height:500px;
+    
+    margin-top: 90px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgb(170, 232, 243);
+}
+
+.title{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.cx-inputs{
+    display: flex;
+  
+}
+
+input{
+    color: #415575;
+    font-size: 19px;
+    padding: 20px;
+    margin-top: 13px;
+    background-color: rgb(170, 232, 243);
+    border: none;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    text-align: center;
+  
+}
+input:focus{
+    outline: 3px solid rgb(35, 54, 57);;
+}
+.nomes{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+.idades{
+    flex: 1;
+    margin-left: 10px;
+   
+}
+
+.item{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.cx-btns{
+    margin-top:23px;
+    margin-bottom: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+button{
+    font-size: 14px;
+    padding: 20px 10px;
+    width: 80%;
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(60, 153, 60);
+    color: white;
+}
+button:hover{
+    background-color: rgb(36, 188, 36);
+    cursor: pointer;
+}
+
+.btn-reset{
+    flex: 1;
+    margin-left: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding: 25px;
+   
+   border-radius: 12px;
+  
+}
+
+
+.btn-reset:hover{
+cursor: pointer;
+background-color:rgb(170, 232, 243);
+}
+
+
+@media screen and (max-width:750px){
+
+.container-app{
+    width: 100vw;
+    padding-bottom: 100px;
+}
+.container{
+    width: 80%;
+    min-width: 60%;
+    height: 660px;
+}
+.cx-inputs{
+flex-direction: column;
+}
+
+.idades{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+   
+}
+
+
+
+}
