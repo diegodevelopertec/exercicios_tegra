@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #081c3d;
+}
+
+.container-app{
+    background-color: #3f1b5e;
+    height: 600px;
+    width: 600px;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #87227f;
+}
+
+.title{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #87227f;
+}
+.cx-inputs{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin-top:20px;
+    padding: 20px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    background-color:#aaa;
+    font-size: 18px;
+}
+.cx-btns{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    font-size: 20px;
+    padding: 20px 10px;
+    width: 80%;
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(46, 127, 46);
+    color: white;
+    box-shadow: 5px 5px rgb(16, 77, 18);
+}
+button:hover{
+    background-color: rgb(52, 173, 52);
+    box-shadow: 5px 5px rgb(32, 98, 32);
+    cursor: pointer;
+}
+
+.btn-reset{
+    flex: 1;
+    margin-left: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 40px;
+   padding: 25px;
+   border-radius: 10px;
+   box-shadow: 5px 5px rgb(188, 184, 184);
+}
+
+.btn-reset:hover{
+    cursor: pointer;
+    background-color: rgb(13, 74, 105);
+    box-shadow: 5px 5px rgb(12, 61, 85);
+}
+
+.message-error{
+ display: none;
+background-color: rgb(123, 27, 27);
+box-shadow: 5px 5px rgb(85, 29, 12);
+padding: 15px;
+margin-top: 14px;
+margin-bottom: 14px;
+border: none;
+border-radius: 5px;
+color: #081c3d;
+}
+
+.res{
+    display: none;
+}
+.oculto{
+    display: none;
+}
+.visivel{
+    display: block;
+}
+
+
+
+
+@media screen and (max-width:960px){
+ 
+    .container-app{
+        width: 90vw;
+      
+    }
+}
+
+.res{
+    margin-top: 20px;
+    justify-content: center;
+    background-color: #aaa;
+    padding: 15px;
+    box-shadow: 0 0 10px rgb(146, 143, 143);
+    border-radius: 10px;
+}

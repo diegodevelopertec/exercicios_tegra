@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(4, 2, 2, 0.575);
+}
+
+.container-app{
+    background-color: rgb(80, 6, 84);
+    box-shadow: 0 0 10px rgb(154, 34, 160);
+    padding: 15px;
+    width: 500px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cx-inputs{
+    display: flex;
+}
+input{
+    text-align: center;
+    flex: 1;
+    height: 70px;
+    width: 70px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cx-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+   
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px rgb(8, 58, 8);
+    background-color : rgb(15, 69, 15);
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+button:hover{
+    box-shadow: 5px 5px rgb(17, 96, 17);
+    background-color : rgb(29, 99, 29);
+}
+.res{
+   margin-top: 15px;
+   padding: 10px;
+   background-color: rgb(51, 51, 136);
+   width: 100%;
+   border-radius: 5px;
+  align-self: flex-start;
+  color: #eee;
+}
+
+.btn-reset{
+    margin-left: 10px;
+    background-color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow:  5px 5px #eee;
+}
+
+.btn-reset:hover{
+    cursor: pointer;
+    box-shadow:  5px 5px rgb(32, 101, 98);
+    background-color: rgb(83, 156, 156);
+}
+@media screen and (max-width:950px){
+    .container{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .container-app{
+        height: max-content;
+        width: 80vw;
+    }
+    .cx-inputs{
+        flex-direction: column;
+    }
+    input{
+        width: 90px;
+        height: 90px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .container{
+        height: 100%;
+    }
+}

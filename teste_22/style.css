@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.729);
+}
+.container-app{
+    width: 350px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(20, 70, 70);
+    height: 600px;
+    box-shadow: 7px 7px rgb(13, 44, 44);
+}
+
+.dados{
+    
+    display: flex;
+}
+
+input{
+   margin-right: 10px;
+    padding: 10px;
+    width: 90%;
+    text-align: center;
+}
+.btn{
+    color: white;
+    flex: 1;
+   padding: 10px;
+   box-shadow: 3px 3px rgb(4, 12, 47);
+   border-radius: 10px;
+    background-color: rgb(21, 21, 112);
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px rgb(12, 63, 31);
+    background-color: rgb(27, 116, 27);
+    }
+
+.linha{
+    color: #aaa;
+    margin-top: 10px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sinal{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tabuada-container{
+    margin: 30px;
+}

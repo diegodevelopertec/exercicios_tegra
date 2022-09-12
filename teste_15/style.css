@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: rgb(36, 36, 73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container-app{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(57, 47, 68);
+   padding: 20px;
+   height: 300px;
+   width: 450px;
+}
+
+.title{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.cx-dados{
+   
+  display: flex;
+ width: 100%;
+}
+input{
+    padding: 15px;
+    outline: 0;
+    width: 90%;
+    border: none;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+}
+button{
+    padding: 15px;
+    border-bottom-right-radius: 10px ;
+    border-top-right-radius: 10px ;
+    flex: 1;
+    background: rgb(23, 23, 154);
+    border: none;
+    color: white;
+}
+
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(41, 41, 208);
+}
+
+.res{
+    justify-content: center;
+    display: none;
+    margin-top: 30px;
+  width: 100%;
+box-shadow: 5px 5px #eee;
+background-color: #aaa;
+border-radius: 5px;
+padding: 23px;
+
+}
+
+.normal{
+    display: flex;
+    background-color: rgb(8, 8, 98);
+    box-shadow: 5px 5px rgb(8, 8, 78);
+}
+
+.elevado{
+    display: flex;
+    background-color: rgb(121, 98, 23);
+    box-shadow: 5px 5px rgb(105, 83, 11);
+}
+
+.diabetes{
+    display: flex;
+    background-color: #8f1e14;
+    box-shadow: 5px 5px #8a1207;
+}

@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    background-color: rgb(56, 31, 80);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-app{
+    border-radius: 5px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: rgb(46, 46, 143);
+}
+
+.dados{
+    
+    display: flex;
+    width: 100%;
+}
+input{
+    width: 80%;
+    margin-right: 5px;
+    padding: 15px;
+}
+button{
+    background-color: rgb(26, 114, 26);
+    color: white;
+    border: none;
+    flex: 1;
+    margin-left: 5px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(64, 167, 64);
+}
+.res{
+    padding: 15px;
+    background-color: #eee;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}

@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.856);
+    height: 100vh;
+}
+.container-app{
+    border-radius: 15px;
+    padding: 15px;
+   width: 600px;
+   height: 400px;
+   background-color: rgb(133, 89, 9);
+   box-shadow: 0px 0px 10px rgb(142, 107, 41);;
+}
+.cx-inputs{
+display: flex;
+flex-direction: column;
+margin-top: 10px;
+margin-bottom: 10pxx;
+}
+input{
+    padding: 15px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+input::placeholder{
+    font-size: 20px;
+}
+.cx-btns{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    font-size: 20px;
+    padding: 20px 10px;
+    width: 80%;
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(46, 127, 46);
+    color: white;
+    box-shadow: 5px 5px rgb(22, 96, 25);
+}
+button:hover{
+    background-color: rgb(52, 173, 52);
+    box-shadow: 5px 5px rgb(46, 150, 46);
+    cursor: pointer;
+}
+
+.btn-reset{
+    flex: 1;
+    margin-left: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 40px;
+   padding: 25px;
+   border-radius: 10px;
+   box-shadow: 5px 5px rgb(188, 184, 184);
+  
+}
+
+.btn-reset:hover{
+cursor: pointer;
+background-color: rgb(13, 74, 105);
+box-shadow: 5px 5px rgb(12, 61, 85);
+}
+
+.res{
+    background-color: #eee;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    border-radius: 13px;
+    box-shadow: 5px 5px rgb(188, 184, 184);
+}
+
+.res-reprovado{
+    background-color: #841324;
+    box-shadow: 5px 5px #781423;
+    color: white;
+}
+.res-aprovado{
+    color: white;
+    background-color: rgb(52, 173, 52);
+    box-shadow: 5px 5px rgb(46, 150, 46);
+}
+
+@media screen and (max-width:950px){
+    .container-app{
+        width: 80vw;
+    }
+}
