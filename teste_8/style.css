@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(18, 18, 62);
+    width: 100vw;
+    height: 100vh;
+    color: rgb(3, 8, 35);;
+}
+
+.container-app{
+        color: rgb(3, 8, 35);;
+        width: 500px;
+        background-color: rgb(40, 17, 59);
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgb(25, 70, 133);
+   
+}
+
+
+.title{
+    margin-bottom: 13px;
+    margin-top: 13px;
+    font-size: 18px;
+}
+.cx-inputs{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: rgb(3, 8, 35);
+padding: 15px;
+border-radius: 10px;
+
+}
+
+input{
+    border-radius: 12px;
+    margin-top:10px;
+    margin-right: 5px;
+    height: 90px;
+    text-align: center;
+    font-size: 24px;
+    border: none;
+
+}
+.cx-btns{
+    margin-top:20px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+
+    text-transform: uppercase;
+    padding: 20px 10px;
+    width: 80%;
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(40, 60, 126);
+    box-shadow: 5px 5px rgb(38, 53, 102);
+    color: white;
+}
+button:hover{
+    background-color:rgb(19, 57, 111);
+    box-shadow: 5px 5px rgb(13, 41, 80);;
+    cursor: pointer;
+}
+
+.btn-reset{
+    flex: 1;
+    margin-left: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 40px;
+   padding: 26px;
+   border-radius: 10px;
+   box-shadow: 5px 5px #aaa;
+  
+}
+
+.btn-reset:hover{
+cursor: pointer;
+background-color:rgb(25, 70, 133);
+box-shadow: 5px 5px rgb(13, 41, 80);;
+}
+
+.res{
+    margin: 20px;
+    font-size: 18px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 5px 5px rgb(170, 168, 168);
+    background-color: #eee;
+    padding: 13px;
+    border-radius: 10px;
+}
+
+.visivel{
+    display: flex;
+}
+.res div{
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width:800px){
+    .container-app{
+        width: 90vw;
+    }
+    
+}
+
+@media screen and (max-width:300px){
+    .container{
+        align-items: flex-start;
+       padding-top: 50px;
+    }
+    .container-app{
+        height: max-content;
+    }
+    .cx-inputs{
+        align-items: center;
+        flex-direction: column;
+       
+    }
+    input{
+        margin-top: 12px;
+        height: 60px;
+        width: 60px;
+    }
+.res{
+    justify-content: flex-start;
+    font-size:17px;
+}
+   
+}

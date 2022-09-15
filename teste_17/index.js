@@ -9,48 +9,31 @@ document.querySelector('.btn-reset').addEventListener('click',resetar)
 
 function calcular(){
 
-    let primeiroNumero=primeiroNumeroInput.value
-    let segundoNumero=segundoNumeroInput.value
 
-   
-   if(primeiroNumero && segundoNumero){
-       parseInt(primeiroNumero,segundoNumero)
-    
+    const primeiraNota=primeiroNumeroInput.value
+    const segundaNota=segundoNumeroInput.value
+    if(primeiraNota && segundaNota){
 
-       function multi(n1,n2){
-            if(n1 > n2){
-                if(n1 / n2 === 0){
-                 for(i=0;i< n1; i++){
-                    if( i  %  n2){
-                        cxResposta.innerHTML='São Múltiplos'
-                    }else{
-                        cxResposta.innerHTML-'Não são Múltiplos'
-                    }
-                 }
-                }
-
+            if( primeiraNota %  segundaNota === 0 || segundaNota % primeiraNota === 0){
+                    cxResposta.innerHTML='São multiplos'
             }else{
-                if(n2 / n1 === 0){
-                    cxResposta.innerHTML='São Múltiplos'
-                }else{
-                    cxResposta.innerHTML='Não são Múltiplos'
-                }
+                cxResposta.innerHTML='Não são multiplos'
             }
 
 
 
 
-       }
 
-       multi(parseInt(primeiroNumero),parseInt(segundoNumero))
+
+
+
    }else{
-    alert('Preencha Todos os campos')
-
-
-   }
-
+   alert('Preencha Todos os campos')
+  }
 
 }
+
+
 
 function resetar(){
 
