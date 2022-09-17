@@ -11,18 +11,18 @@
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.797);
 }
 
 .container-app{
-    margin-top: 80px;
-    height: 500px;
     width: 600px;
     background-color: #591527;
     border-radius: 15px;
     padding:20px;
     box-shadow: 0 0 10px ;
 }
+
 .title{
     color: #fffdfe;
     margin-top: 15px;
@@ -34,6 +34,7 @@
     flex-direction: column;
     margin-top:20px
 }
+
 input{
     padding: 15px;
     font-size: 20px;
@@ -44,13 +45,14 @@ input::placeholder{
     color: #c2c2c2;
 }
 .cx-btns{
-    margin-top:20px;
+  
     display: flex;
     justify-content: center;
     align-items: center;
 }
-button{
 
+button{
+    font-size: 20px;
     padding: 20px 10px;
     width: 80%;
     align-self: center;
@@ -59,9 +61,11 @@ button{
     background-color: rgb(60, 153, 60);
     color: white;
 }
+
 button:hover{
     background-color: rgb(36, 188, 36);
     cursor: pointer;
+    outline: 2px solid  rgb(43, 109, 33);
 }
 
 .btn-reset{
@@ -71,25 +75,25 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-   height: 40px;
-   padding: 25px;
-   border-radius: 10px;
-  
+    height: 60px;
+    padding: 25px;
+    border-radius: 10px;
 }
 
 .btn-reset:hover{
-cursor: pointer;
-background-color: rgb(212, 215, 212);
+    cursor: pointer;
+    background-color: rgb(38, 94, 126);
 }
 
 
 
 .res{
     font-weight: bold;
- color: rgb(134, 41, 41);
-    margin-top: 20px;
-   padding-top: 15px;
-   padding-bottom: 15px;
+    color: rgb(134, 41, 41);
+    margin-top: 25px;
+    margin-top:25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: center;
     border-radius: 10px;
     background-color: #eee;

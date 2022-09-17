@@ -14,17 +14,18 @@
 .container{
     
    height: 100vh;
-    background-color: rgb(55, 104, 104);
+    background-color: rgb(69, 122, 122);
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .container-app{
-    margin-top: 80px;
+   
     padding: 20px;
-    background-color: rgb(46, 132, 132);
+    background-color: rgb(34, 110, 110);
     box-shadow: 0 0 10px #aaa;
-   height: 400px;
-   width: 600px;
+    height: 400px;
+    width: 600px;
 }
 .cx-btns{
     margin-top:20px;
@@ -56,6 +57,16 @@ input:hover{
 input::placeholder{
     color:  #304889;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 button{
 
     padding: 20px 10px;
@@ -78,44 +89,61 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-   height: 40px;
-   padding: 25px;
-   border-radius: 10px;
+    height: 40px;
+    padding: 25px;
+    border-radius: 10px;
   
 }
 
 .btn-reset:hover{
-cursor: pointer;
-background-color: rgb(212, 215, 212);
+    cursor: pointer;
+    background-color: rgb(212, 215, 212);
 }
 
 
-
-.res{
-   display: block;
-    margin-top:20px;
-    font-size: 20px;
-    text-align: center;
-    
+.oculto{
+    display: none;
 }
-.res div{
+
+.visivel{
+    display: flex;
     background-color:#eee;
     background-color:  #3e5db3;
     border-radius: 10px;
-padding: 13px;
-color:  rgb(214, 205, 205);
-box-shadow: 3px 3px 0   #4163c1;
-display: none;
-
+    padding: 13px;
+    color:  rgb(214, 205, 205);
+    box-shadow: 5px 5px 0   #2d4b9d;
+    margin-top:20px;
+    font-size: 20px;
+    text-align: center;
 }
 
+.erro-msg{
+    display: flex;
+    margin-top:20px;
+    font-size: 20px;
+    padding: 13px;
+    justify-content: center;
+    color:  rgb(214, 205, 205);
+    background-color: rgb(142, 47, 47);
+    box-shadow:5px 5px  #822b2b;
+    border-radius: 10px;
+}
 
-
+#cx_name{
+    margin-right: 5px;
+    margin-left: 5px;
+}
 @media screen and (max-width:950px){
     .container{
         width: 100vw;
     }
     .container-app{
         width: 80vw;
+    }
+
+    .res{
+       flex-wrap: wrap;
+        font-size: 13px;
     }
 }

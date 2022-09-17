@@ -70,3 +70,16 @@ button:hover{
     font-size: 20px;
 }
 
+
+
+@media screen and (max-width:800px){
+   .container-app{
+    width: 90vw;
+   }
+   .cx-inputs{
+    flex-direction: column;
+   }
+   input{
+    margin-top:10px;
+   }
+}

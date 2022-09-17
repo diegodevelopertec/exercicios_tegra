@@ -1,24 +1,23 @@
+//Variaveis
 const inputCombustivel=document.querySelector('#combustivel')
 const inputDistancia=document.querySelector('#distancia')
 const cxResultado=document.querySelector('.resultado')
 
 
 
-
+//Eventos
 document.querySelector('button').addEventListener('click',calcular)
 document.querySelector('.btn-reset').addEventListener('click',resetar)
 
 
+//Funcoes
 function calcular(){
-
-
     const combustivelGasto=inputCombustivel.value
     const  distanciaPercorrida=inputDistancia.value
 
 
-    parseInt(distanciaPercorrida)
-    parseFloat(combustivelGasto)
-
+    parseInt(distanciaPercorrida,combustivelGasto)
+    
     if(combustivelGasto && distanciaPercorrida){
 
         let consumoMedio=distanciaPercorrida / combustivelGasto 

@@ -1,15 +1,21 @@
-body{
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
     display: flex;
+    height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
-   background-color: rgba(0, 0, 0, 0.785);
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.785);
 }
-.container{
+.container-app{
     font-size: 18px;
     padding: 15px;
     background-color: rgb(7, 77, 115);
    width: 500px;
-   margin-top: 100px;
    display: flex;
    flex-direction: column;
    padding: 26px;
@@ -66,6 +72,7 @@ input{
     background-color: white;
     padding: 13px;
     margin-top: 10px;
+    font-size: 15px;
     text-align: center;
     border: none;
     border-top-left-radius:10px;
@@ -88,8 +95,10 @@ text-align: center;
 }
 
 @media screen and (max-width:900px){
-    .container{
+    .container-app{
         width: 90vw;
+        margin: 15px;
+
     }
     .title{
         min-width: 13px;

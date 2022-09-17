@@ -1,37 +1,52 @@
+//variaveis
 const nomeInput=document.querySelector('.nome')
 const valorHoraInput=document.querySelector('.valuehr')
 const horasTrabalhadasInput=document.querySelector('.hr')
-const cxValor=document.querySelector('.cx_valor')
-const cxNome=document.querySelector('.cx_nome')
-const cxRes=document.querySelector('.cx_res')
+const cxRes=document.querySelector('.res')
 
-
+//Eventos
 document.querySelector('button').addEventListener('click',calcular)
-
 document.querySelector('.btn-reset').addEventListener('click',reset)
+
+document.querySelectorAll('input').forEach(inputClicado => {
+     
+   inputClicado.addEventListener('click',()=>{
+        if(cxRes.classList.contains('erro-msg') || cxRes.classList.contains('visivel')){
+            autoReset()
+        }
+   })
+})
 
 
 function calcular(){
 
-const nome=nomeInput.value
-const valorHora=valorHoraInput.value
-const horasTrabalhadas=horasTrabalhadasInput.value
+    const nome=nomeInput.value
+    const valorHora=valorHoraInput.value
+    const horasTrabalhadas=horasTrabalhadasInput.value
 
 
-    let conditicao=nome && valorHora && horasTrabalhadas
+    let condicao=nome && valorHora && horasTrabalhadas
 
-    if(conditicao){
+    if(condicao){
+       parseFloat(valorHora,horasTrabalhadas)
+       const resultado=valorHora * horasTrabalhadas
 
-        parseFloat(valorHora)
-        parseFloat(horasTrabalhadas)
-        
+      if(cxRes.classList.contains('oculto' )){
+            cxRes.classList.remove('oculto')
+            cxRes.classList.add('visivel')
+            cxRes.innerHTML=` O salário de  <span id='cx_name'>${nome}</span>   deve ser de  R$<span>${resultado.toFixed(2)}</span>`
+       }
 
-        const resultado=valorHora * horasTrabalhadas
-    cxNome.innerHTML=nome
-    cxValor.innerHTML=resultado.toFixed(2)
-      cxRes.style.display='block'
+
     }else{
-        alert('Preencha Todos os Campos')
+        if(cxRes.classList.contains('oculto') || cxRes.classList.contains('visivel')){
+            cxRes.classList.remove('oculto')
+            cxRes.classList.remove('visivel')
+            cxRes.classList.add('erro-msg')
+            cxRes.innerHTML=`Preencha os campos`
+        }
+
+      
     }
 
 
@@ -42,9 +57,24 @@ function reset(){
     nomeInput.value=''
     valorHoraInput.value=''
     horasTrabalhadasInput.value=''
-    cxValor.innerHTML='00.00'
-    cxNome.value=''
-    cxRes.style.display='none'
+   
+    if(cxRes.classList.contains('erro-msg') || cxRes.classList.contains('visivel')){
+        cxRes.classList.remove('erro-msg')
+        cxRes.classList.remove('visivel')
+        cxRes.classList.add('oculto')
+       
+     }
 
+}
 
+function autoReset(){
+ 
+    nomeInput.value=''
+    valorHoraInput.value=''
+    horasTrabalhadasInput.value=''
+    cxRes.classList.remove('erro-msg')
+    cxRes.classList.remove('visivel')
+    cxRes.classList.add('oculto')
+            
+     
 }

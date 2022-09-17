@@ -1,3 +1,5 @@
+
+//VARIAVEIS
 const inputQdt=document.querySelector('#qdt')
 const inputRecebido=document.querySelector('#recebido')
 const inputPreco=document.querySelector('#preco')
@@ -5,10 +7,13 @@ const troco=document.querySelector('.troco')
 
 
 
-
+//EVENTOS
 document.querySelector('button').addEventListener('click',Calcular)
 document.querySelector('.btn-reset').addEventListener('click',Resetar)
 
+
+
+//fUNCOES
 function Calcular(){
     
     let qdt= inputQdt.value
@@ -16,26 +21,15 @@ function Calcular(){
     let recebido=inputRecebido.value
 
 
-    parseInt(qdt)
-    parseFloat(preco)
-    parseFloat(recebido)
-
-
+    parseInt(qdt,preco,qdt)
     let condicao=qdt && preco && recebido
     
-        if(condicao){
-          
-        let resultado= (preco * qdt) - recebido
-        troco.innerHTML=`${resultado.toFixed(2)}`
-
-
-
-
-
-
-        }else{
+     if(condicao){
+            let resultado= recebido - (preco * qdt) 
+            troco.innerHTML=`${resultado.toFixed(2)}`
+     }else{
             alert('Preencha Todos os campos')
-        }
+    }
 
 }
 

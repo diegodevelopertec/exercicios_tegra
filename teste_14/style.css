@@ -10,17 +10,17 @@
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #081c3d;
 }
 
 .container-app{
     background-color: #3f1b5e;
-    height: 600px;
     width: 600px;
-    margin-top: 40px;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 0 10px #87227f;
+    padding-bottom: 80px;
 }
 
 .title{
@@ -78,7 +78,7 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-   height: 40px;
+   height: 55px;
    padding: 25px;
    border-radius: 10px;
    box-shadow: 5px 5px rgb(188, 184, 184);

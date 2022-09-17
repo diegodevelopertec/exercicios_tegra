@@ -12,11 +12,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(4, 2, 2, 0.575);
+    background-color: rgba(4, 2, 2, 0.805);
 }
 
 .container-app{
-    background-color: orange;
+    background-color: rgb(162, 126, 59);
+    box-shadow: 0 0 38px rgb(108, 88, 51);
     padding: 15px;
     width: 500px;
     border-radius: 5px;
@@ -61,8 +62,12 @@ button:hover{
     background-color : rgb(29, 99, 29);
 }
 .res{
-   
+  margin-top: 15px;
+  margin-bottom: 15px;
   align-self: flex-start;
+  background-color: #eee;
+  padding: 12px;
+  border-radius: 5px;
 }
 
 .btn-reset{

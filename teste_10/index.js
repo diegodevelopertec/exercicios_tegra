@@ -1,3 +1,4 @@
+
 const inputPrimeiro=document.querySelector('.primeiro')
 const inputSegundo=document.querySelector('.segundo')
 const inputTerceiro=document.querySelector('.terceiro')
@@ -10,14 +11,11 @@ document.querySelector('.btn-reset').addEventListener('click',resetar)
 
 function calcular(){
 
-
     const primeiroValor=inputPrimeiro.value
     const  segundoValor=inputSegundo.value
     const  terceiroValor=inputTerceiro.value
 
-    parseInt(primeiroValor)
-    parseInt(segundoValor)
-    parseInt(terceiroValor)
+    parseInt(primeiroValor,segundoValor,terceiroValor)
 
     if(primeiroValor && segundoValor && terceiroValor){
         cxResultado.innerHTML=Math.min.apply(null, [primeiroValor,segundoValor,terceiroValor]) 

@@ -9,6 +9,7 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: center;
     background-color: #081c3d;
 }
@@ -17,7 +18,6 @@
     background-color: #5e1b59;
     height: 600px;
     width: 600px;
-    margin-top: 40px;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 0 10px #87227f;
@@ -75,20 +75,15 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-   height: 40px;
-   padding: 25px;
-   border-radius: 10px;
+    height: 40px;
+    padding: 25px;
+    border-radius: 10px;
   
 }
 
 .btn-reset:hover{
-cursor: pointer;
-background-color: rgb(212, 215, 212);
-}
-@media screen and (max-width:960px){
-    .container-app{
-        width: 90vw;
-    }
+    cursor: pointer;
+    background-color: rgb(212, 215, 212);
 }
 
 .res{
@@ -99,4 +94,12 @@ background-color: rgb(212, 215, 212);
     padding: 15px;
     box-shadow: 0 0 10px rgb(146, 143, 143);
     border-radius: 10px;
+    color: #EEE;
 }
+
+@media screen and (max-width:960px){
+    .container-app{
+        width: 90vw;
+     }
+}
+

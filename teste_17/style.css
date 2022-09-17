@@ -72,17 +72,17 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-   height: 40px;
-   padding: 25px;
-   border-radius: 10px;
-   box-shadow: 5px 5px rgb(188, 184, 184);
+    height: 60px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(188, 184, 184);
   
 }
 
 .btn-reset:hover{
 cursor: pointer;
-background-color: rgb(13, 74, 105);
-box-shadow: 5px 5px rgb(12, 61, 85);
+background-color: rgb(12, 60, 85);
+box-shadow: 5px 5px rgb(7, 47, 67);
 }
 
 .res{

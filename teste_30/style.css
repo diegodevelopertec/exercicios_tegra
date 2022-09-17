@@ -12,14 +12,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .container-app{
+    
     border-radius: 5px;
     width: 500px;
     display: flex;
     flex-direction: column;
     padding: 15px;
     background-color: rgb(143, 46, 86);
+    box-shadow: 15px 15px rgb(107, 25, 60);
 }
 
 .dados{
@@ -31,6 +34,8 @@ input{
     width: 80%;
     margin-right: 5px;
     padding: 15px;
+    font-size: 18px;
+    text-align: center;
 }
 button{
     background-color: rgb(26, 114, 26);
@@ -40,6 +45,7 @@ button{
     margin-left: 5px;
     padding: 15px;
     border-radius: 5px;
+    font-size: 18px;
 }
 
 
@@ -53,6 +59,7 @@ button:hover{
     margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 15px;
+    font-size: 18px;
 }
 
 @media screen and (max-width:800px){

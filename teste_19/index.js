@@ -5,11 +5,20 @@ const cxAumento=document.querySelector('.aumento')
 
 
 document.querySelector('button').addEventListener('click',verificar)
+document.querySelector('input').addEventListener('click',()=>{
+    if(cxAumento.innerHTML !== 'X'){
+        cxNovoSalario.innerHTML='X'
+        cxAumento.innerHTML='X'
+        cxPorcentagem.innerHTML='X%' 
 
+    }
+})
 
 function verificar(){
 
     const salario=salarioInput.value
+    salarioInput.value=''
+   
     if( salario ){
         if(parseFloat(salario) <= 999){
             const aumento=parseFloat(salario * 20 /100 )
@@ -48,6 +57,8 @@ function verificar(){
             cxAumento.innerHTML=`R$ ${aumento.toFixed(2)}`
             cxPorcentagem.innerHTML='5%'
         }
+    }else{
+        alert('Preencha o campo')
     }
 
 

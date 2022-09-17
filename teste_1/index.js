@@ -1,5 +1,5 @@
 
-
+//variaveis
 let inputLargura=document.querySelector('#largura')
 let inputComprimento=document.querySelector('#comprimento')
 let inputValorMetro=document.querySelector('#valormetro')
@@ -11,20 +11,17 @@ let botaoReset=document.querySelector('.btn-reset')
 
 
 
-
-
-
+//Eventos
 botaoCalculo.addEventListener('click',()=>Calculo())
 botaoReset.addEventListener('click',()=>resetDados())
 
 
-const Calculo=()=>{
 
-    
+//Funções
+const Calculo=()=>{
     let largura=inputLargura.value
     let comprimento=inputComprimento.value
     let valorMetro=inputValorMetro.value
-
 
     inputComprimento.value=''
     inputLargura.value=''
@@ -40,7 +37,6 @@ const Calculo=()=>{
     }else{
         alert('campos vazios')
     }
-
 
 }
 

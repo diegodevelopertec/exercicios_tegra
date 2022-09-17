@@ -16,7 +16,7 @@ function calcular(){
      for(i=0;i < segundoNum ;i++){
         if( i % 2 === 1){
             soma=soma +i
-            cxResultado.innerHTML=soma
+            cxResultado.innerHTML=`SOMA DOS ÌMPARES= ${soma}`
         }
      }
         cxResultado.style.display='flex'

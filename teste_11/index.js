@@ -1,12 +1,15 @@
 let primeiraNotaInput=document.getElementById('nota_one')
 let segundaNotaInput=document.getElementById('nota_two')
-let cxCondicao=document.getElementById('condicao')
-let cxNotaFinal=document.getElementById('nota')
 let containerRes=document.querySelector('.res')
+
+
 document.querySelector('button').addEventListener('click',calcular)
 document.querySelector('.btn-reset').addEventListener('click',resetar)
+document.querySelectorAll('input').forEach(inputClicado=>{
+    inputClicado.addEventListener('click',autoReset)
+})
 
-
+containerRes.innerHTML='Adicione duas notas'
 
 function calcular(){
 
@@ -17,29 +20,41 @@ function calcular(){
    if(nota1 && nota2){
     
     let notaFinal=parseFloat(parseFloat(nota1) + parseFloat(nota2)).toFixed(1)
-    cxNotaFinal.innerHTML=notaFinal
+   
+
             if(notaFinal < 60.00){
-                cxCondicao.innerHTML='REPROVADO'
+                containerRes.innerHTML=`<div id="cx-nota">Nota Final : <span id="nota">${notaFinal}</span></div>`
+                containerRes.innerHTML+='<div id="cx-condicao">Condição  : <span id="condicao"> REPROVADO </span></div>'
                 containerRes.classList.add('res-reprovado')
+              
             }else{
-                cxCondicao.innerHTML='APROVADO'
+                containerRes.innerHTML=`<div id="cx-nota">Nota Final : <span id="nota">${notaFinal}</span></div>`
+                containerRes.innerHTML+='<div id="cx-condicao">Condição  : <span id="condicao"> APROVADO </span></div>'
                 containerRes.classList.add('res-aprovado')
             }
 
-
    }else{
-    alert('Preencha Todos os campos')
-
-
+        containerRes.innerHTML='Preencha todos os campos'
+        containerRes.classList.add('res-reprovado')
    }
 }
 
 function resetar(){
-
     primeiraNotaInput.value=''
     segundaNotaInput.value=''
-    cxCondicao.innerHTML='Y'
-    cxNotaFinal.innerHTML='X'
+   containerRes.innerHTML='Adicione duas notas'
     containerRes.classList.contains('res-reprovado') || containerRes.classList.contains('res-reprovado')  ? containerRes.classList.remove('res-reprovado') : containerRes.classList.remove('res-aprovado')
     
+}
+
+
+function autoReset(){
+
+    if( containerRes.innerHTML='Preencha todos os campos'){
+        containerRes.innerHTML='Adicione duas notas'
+        containerRes.classList.remove('res-reprovado')
+        containerRes.classList.remove('res-aprovado')
+    }
+  
+
 }

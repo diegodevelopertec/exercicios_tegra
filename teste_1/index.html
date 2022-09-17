@@ -5,25 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Exercicio_1</title>
+    <title>Cálculo de area e preço de Terreno</title>
 </head>
 <body>
     
     <div class="container">
-        <div class="title">Calculo de Area e Preço de Terreno</div>
-       <div class="cx-inputs">
-            <input type="number" placeholder="Largura do terreno " id="largura">
-            <input type="number" placeholder="Comprimento do terreno" id="comprimento">
-            <input type="number" placeholder="Valor do metro quadrado:" id="valormetro">
-       </div>
-     <div class="cx-btns">
-        <button>calcular</button>
-        <div class="btn-reset" title="resetar resultado"><img src="https://img.icons8.com/color/48/000000/return.png"/> </div>
-     </div>
-       <div class="res">
-            <div class="area_terreno">Área do terreno : <span id="area">00</span> </div>
-            <hr>
-            <div class="preco_terreno">Preço do terreno : <span id="preco">00</span>  </div>
+       <div class="container-app">
+            <div class="title">Calculo de Area e Preço de Terreno</div>
+            <div class="cx-inputs">
+                <input type="number" placeholder="Largura do terreno " id="largura" min="0">
+                <input type="number" placeholder="Comprimento do terreno" id="comprimento"  min="0">
+                <input type="number" placeholder="Valor do metro quadrado:" id="valormetro" min="0">
+            </div>
+
+          <div class="cx-btns">
+            <button>calcular</button>
+            <div class="btn-reset" title="resetar resultado"><img src="https://img.icons8.com/color/48/000000/return.png"/> </div>
+          </div>
+
+            <div class="res">
+                <div class="area_terreno">Área do terreno : <span id="area">00</span> </div>
+                <hr>
+                <div class="preco_terreno">Preço do terreno : <span id="preco">00</span>  </div>
+            </div>
        </div>
     </div>
 

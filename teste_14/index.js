@@ -9,7 +9,7 @@ const cxRes=document.querySelector('.res')
 document.querySelector('button').addEventListener('click',Calcular)
 document.querySelector('.btn-reset').addEventListener('click',Resetar)
 document.querySelectorAll('.input').forEach(item=>{
-    item.addEventListener('click',removeError)
+    item.addEventListener('click',removeErro)
 
 })
 
@@ -21,11 +21,8 @@ function Calcular(){
     let recebido=inputRecebido.value
 
 
-    parseInt(qdt)
-    parseFloat(preco)
-    parseFloat(recebido)
-
-
+    parseInt(qdt,preco,recebido)
+  
     let condicao=qdt && preco && recebido
     
         if(condicao){
@@ -45,15 +42,15 @@ function Calcular(){
            cxMessage.innerHTML='Preencha todos os campos'
            cxRes.classList.remove('visivel')
         
-
         }
 
 }
 
 
-function removeError(){
+function removeErro(){
     cxMessage.classList.remove('visivel')
 }
+
 
 function Resetar(){
     inputQdt.value=''
@@ -62,6 +59,5 @@ function Resetar(){
     troco.innerHTML='00.00'
     cxRes.classList.remove('visivel')
     cxMessage.classList.remove('visivel')
-
 
 }

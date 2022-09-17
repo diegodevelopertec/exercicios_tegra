@@ -34,27 +34,13 @@ function  calcular(){
 
     const areaQuadrado=parseFloat(medidaA) * 4
     const areaTriangulo=parseFloat(medidaA * medidaB  /2) 
-
-    const calcMedidas=parseFloat(medidaA + medidaB ) * parseFloat(medidaC)
-    const areaTrapezio=calcMedidas  / 2
-
-
-
-
+    const areaTrapezio=parseFloat(medidaA + medidaB * medidaC )/2
 
     cxQuadrado.innerHTML=areaQuadrado.toFixed(4)
-  cxTriangulo.innerHTML=areaTriangulo.toFixed(4)
-   cxTrapezio.innerHTML=areaTrapezio.toFixed(4)
+    cxTriangulo.innerHTML=areaTriangulo.toFixed(4)
+    cxTrapezio.innerHTML=areaTrapezio.toFixed(4)
 
     cxResposta.classList.add('visivel')
-
-
-
-
-
-
-
-
 
 }
 

@@ -1,4 +1,4 @@
-//variables
+//variveis
 
 const inputNameOne=document.querySelector('.input_nome1')
 const inputNameTwo=document.querySelector('.input_nome2')
@@ -13,13 +13,13 @@ const areaAgeTwo=document.querySelector('.idade_2')
 
 
 
-//Events
+//Eventos
 document.querySelector('button').addEventListener('click',Calculate)
 document.querySelector('.btn-reset').addEventListener('click',reset)
 
 
 
-//Functions
+//Funções
 function Calculate(){
     
    let  nameOne=inputNameOne.value
@@ -45,14 +45,13 @@ function Calculate(){
     document.querySelector('.media_nome_1').innerHTML=nameOne
     document.querySelector('.media_nome_2').innerHTML=nameTwo
     document.querySelector('.media_ages').innerHTML=mediaAges.toFixed(1)
+    document.querySelector('.cx-res').style.display='block'
 
     }else{
         alert('Preencha Todos os campos correntamente')
     }
 
-
-
-
+  
 }
 
 
@@ -71,7 +70,7 @@ function reset(){
     document.querySelector('.media_nome_1').innerHTML='Pessoa_1'
     document.querySelector('.media_nome_2').innerHTML='Pessoa_2'
     document.querySelector('.media_ages').innerHTML='X'
-
+    document.querySelector('.cx-res').style.display='none'
 
 }
 

@@ -1,8 +1,8 @@
 *{
     margin: 0;
     padding:0;
-  font-family: Arial, Helvetica, sans-serif;
-box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 .container{
@@ -14,18 +14,18 @@ box-sizing: border-box;
     height: 100vh;
 }
 .container-app{
-    border-radius: 15px;
-    padding: 15px;
+   border-radius: 15px;
+   padding: 15px;
    width: 600px;
    height: 400px;
-   background-color: rgb(133, 89, 9);
-   box-shadow: 0px 0px 10px rgb(142, 107, 41);;
+   background-color: rgb(7, 5, 51);
+   box-shadow: 0px 0px 10px rgb(26, 52, 83);;
 }
 .cx-inputs{
-display: flex;
-flex-direction: column;
-margin-top: 10px;
-margin-bottom: 10pxx;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10pxx;
 }
 input{
     padding: 15px;
@@ -42,6 +42,7 @@ input::placeholder{
     justify-content: center;
     align-items: center;
 }
+
 button{
     font-size: 20px;
     padding: 20px 10px;
@@ -53,6 +54,7 @@ button{
     color: white;
     box-shadow: 5px 5px rgb(22, 96, 25);
 }
+
 button:hover{
     background-color: rgb(52, 173, 52);
     box-shadow: 5px 5px rgb(46, 150, 46);
@@ -66,7 +68,7 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-   height: 40px;
+   height: 60px;
    padding: 25px;
    border-radius: 10px;
    box-shadow: 5px 5px rgb(188, 184, 184);
@@ -74,9 +76,9 @@ button:hover{
 }
 
 .btn-reset:hover{
-cursor: pointer;
-background-color: rgb(13, 74, 105);
-box-shadow: 5px 5px rgb(12, 61, 85);
+    cursor: pointer;
+    background-color: rgb(13, 74, 105);
+    box-shadow: 5px 5px rgb(12, 61, 85);
 }
 
 .res{

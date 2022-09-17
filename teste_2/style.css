@@ -1,20 +1,28 @@
 
-body{
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
     display: flex;
+    height: 100vh;
     justify-content: center;
-    background-color:#b4b3b7 ;
+    align-items: center;
+    background-color:#615586 ;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(177, 177, 217);
 }
 
-.container{
+.container-app{
     background-color: #086a6a;
-    margin-top: 100px;
+    box-shadow: 15px 15px #105a5a;;
     display: flex;
     flex-direction: column;
     width: 600px;
     padding: 20px;
     border-radius: 12px;
+    max-height: 600px;
 }
 .title{
     font-size: 20px;
@@ -74,8 +82,8 @@ button:hover{
 
 
 .btn-reset:hover{
-cursor: pointer;
-background-color: rgb(33, 14, 120);
+    cursor: pointer;
+    background-color: rgb(50, 30, 141);
 }
 .res{
     margin-top: 25px;
@@ -85,5 +93,12 @@ background-color: rgb(33, 14, 120);
     color: #aaa;
 }
 .res div{
-margin-top: 10px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:800px){
+    
+    .container-app{
+        width: 80vw;
+    }
 }

@@ -1,5 +1,5 @@
 
-
+//Variaveis
 let inputBase=document.getElementById('base')
 let inputAltura=document.getElementById('altura')
 let resArea=document.getElementById('area_id')
@@ -7,12 +7,12 @@ let resDiagonal=document.getElementById('diagonal_id')
 let resPerimetro=document.getElementById('perimetro_id')
 
 
-
+//Eventos
 document.querySelector('button').addEventListener('click',calcular)
 document.querySelector('.btn-reset').addEventListener('click',resetDados)
 
 
-
+//Funcões
 function calcular(){
     let base=inputBase.value
     let altura=inputAltura.value
@@ -20,11 +20,6 @@ function calcular(){
     inputAltura.value=''
 
     if(base && altura){
-
-
-        
-
-
         let areaRetangulo=parseFloat(base * altura)
         let areaPerimetro=parseFloat(base * 2 + altura * 2)
 
@@ -43,8 +38,6 @@ function calcular(){
     }else{
         alert('Todos os campos devem ser preenchidos')
     }
-
-
 }
 
 
@@ -53,6 +46,4 @@ function resetDados(){
     resArea.innerHTML='00'
     resPerimetro.innerHTML='00'
     resDiagonal.innerHTML='00'
-
-
 }

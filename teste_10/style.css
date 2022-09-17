@@ -104,6 +104,7 @@ background-color:rgb(25, 70, 133);
     color: orange;
     border-radius: 5px;
     padding: 15px;
+    margin-left: 5px;
 }
 
 @media screen and (max-width:800px){
@@ -114,26 +115,29 @@ background-color:rgb(25, 70, 133);
 }
 
 @media screen and (max-width:300px){
-    .container{
-        align-items: flex-start;
-       padding-top: 50px;
-    }
-    .container-app{
-        height: max-content;
-    }
-    .cx-inputs{
+
+ .container{
+     align-items: flex-start;
+     padding-top: 50px;
+}
+
+.container-app{
+    height:max-content;
+
+}
+.cx-inputs{
         align-items: center;
         flex-direction: column;
-       
-    }
+}
     input{
         margin-top: 12px;
         height: 60px;
         width: 60px;
     }
+
 .res{
     justify-content: flex-start;
-    font-size:17px;
+   font-size: 15px;
 }
    
 }

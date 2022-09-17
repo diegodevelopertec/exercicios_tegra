@@ -11,7 +11,7 @@ document.querySelector('.btn-reset').addEventListener('click',resetar)
 function calcular(){
 
 
-    const primeiroValor=inputPrimeiraDistancia.value
+    const  primeiroValor=inputPrimeiraDistancia.value
     const  segundoValor=inputSegundaDistancia.value
     const  terceiroValor=inputTerceiraDistancia.value
 

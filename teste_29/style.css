@@ -28,11 +28,13 @@
     width: 100%;
 }
 input{
+    font-size: 18px;
     width: 80%;
     margin-right: 5px;
     padding: 15px;
 }
 button{
+    font-size: 18px;
     background-color: rgb(26, 114, 26);
     color: white;
     border: none;
@@ -48,6 +50,7 @@ button:hover{
     background-color: rgb(64, 167, 64);
 }
 .res{
+    font-size: 18px;
     padding: 15px;
     background-color: #eee;
     margin-top: 15px;
