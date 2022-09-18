@@ -6,6 +6,7 @@ const cxRes=document.querySelector('.res')
 
 document.querySelector('button').addEventListener('click',()=>{
   let valorX=inputX.value
+
     if(valorX){
         parseInt(valorX)
      
@@ -22,15 +23,15 @@ document.querySelector('button').addEventListener('click',()=>{
       
         cxRes.style.display='flex'
         inputX.value=''
-      console.log(pares.slice())
+   
        
     }
 })
 
 
 document.querySelector('input').addEventListener('click',()=>{
-    cxRes.style.innerHTML=''
+    cxRes.innerHTML=''
     cxRes.style.display='none'
-    console.log(pares.slice(pares.length));
+  
 
 })

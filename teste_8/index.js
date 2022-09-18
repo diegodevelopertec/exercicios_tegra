@@ -4,9 +4,7 @@ const inputMedidaA=document.querySelector('.medida_a')
 const inputMedidaB=document.querySelector('.medida_b')
 const inputMedidaC=document.querySelector('.medida_c')
 const cxResposta=document.querySelector('.res')
-const cxQuadrado=document.querySelector('#cx_quadrado')
-const cxTriangulo=document.querySelector('#cx_triangulo')
-const cxTrapezio=document.querySelector('#cx_trapezio')
+
 
 
 document.querySelector('button').addEventListener('click',calcular)
@@ -14,40 +12,58 @@ document.querySelector('.btn-reset').addEventListener('click',resetar)
 
 
 document.querySelectorAll('input').forEach(
-    item=>{
-        item.addEventListener('click',()=>{
-         if( cxResposta.classList.contains('visivel'))
-            cxResposta.classList.remove('visivel')
-        })
-    }
+  item=>item.addEventListener('click',resetar)
 )
 
 
 
 
 function  calcular(){
-
+ 
 
     const medidaA=inputMedidaA.value
     const medidaB=inputMedidaB.value
     const medidaC=inputMedidaC.value
 
-    const areaQuadrado=parseFloat(medidaA) * 4
-    const areaTriangulo=parseFloat(medidaA * medidaB  /2) 
-    const areaTrapezio=parseFloat(medidaA + medidaB * medidaC )/2
-
-    cxQuadrado.innerHTML=areaQuadrado.toFixed(4)
-    cxTriangulo.innerHTML=areaTriangulo.toFixed(4)
-    cxTrapezio.innerHTML=areaTrapezio.toFixed(4)
-
-    cxResposta.classList.add('visivel')
+    if(medidaA,medidaB,medidaC){
+        parseFloat(medidaA,medidaB,medidaC)
+        const areaQuadrado=medidaA * 4
+        const areaTriangulo=(medidaA * medidaB)  /2
+        const areaTrapezio=((medidaA + medidaB)  * medidaC) / 2.0
+    
+       
+        if(cxResposta.classList.contains('oculto')){
+            cxResposta.innerHTML=`
+            <div>  ÀREA DO QUADRADO : <span > ${areaQuadrado.toFixed(4)} </span></div>
+            <div>  ÁREA DO TRIÂNGULO : <span > ${areaTriangulo.toFixed(4)} </span></div>
+            <div>  ÁREA DO TRAPÉZIO : <span > ${areaTrapezio.toFixed(4)} </span></div>
+            
+            
+            `
+            cxResposta.classList.remove('oculto')
+            cxResposta.classList.add('visivel')
+        }
+    }else{
+        if(cxResposta.classList.contains('oculto')){
+            cxResposta.innerHTML='Preencha todos os campos'
+            cxResposta.classList.remove('oculto')
+            cxResposta.classList.add('visivel')
+        }
+    
+    }
 
 }
 
 
 function resetar(){
-    cxResposta.classList.remove('visivel')
-    inputMedidaA.value=''
-    inputMedidaB.value=''
-    inputMedidaC.value=''
+   
+   if(cxResposta.classList.contains('visivel')){
+        inputMedidaA.value=''
+        inputMedidaB.value=''
+        inputMedidaC.value=''
+        cxResposta.innerHTML=''
+        cxResposta.classList.remove('visivel')
+        cxResposta.classList.add('oculto')
+       
+   }
 }

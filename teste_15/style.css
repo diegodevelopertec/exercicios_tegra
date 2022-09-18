@@ -90,3 +90,9 @@ color: white;
     background-color: #8f1e14;
     box-shadow: 5px 5px #8a1207;
 }
+
+@media screen and (max-width:800px){
+  .container-app{
+    width: 90vw;
+  }
+}

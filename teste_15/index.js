@@ -3,46 +3,40 @@ const cxResultado=document.querySelector('.resultado')
 const cxRes=document.querySelector('.res')
 
 document.querySelector('button').addEventListener('click',verificar)
-
+document.querySelector('input').addEventListener('click',resetar)
 
 function verificar(){
     const qdt=inputQdt.value
+   
+
     if(qdt){
-        if(parseFloat(qdt) <= 100 ){
-            cxResultado.innerHTML='Normal' 
-            cxRes.classList.remove('elevado')
-            cxRes.classList.remove('diabetes')         
-            cxRes.classList.add('normal')
-            
-        }else if(qdt >  100  || qdt <= 140){
-            cxResultado.innerHTML='Elevado'          
-            cxRes.classList.remove('normal')
-            cxRes.classList.remove('diabetes')
-            cxRes.classList.add('elevado')
-              
-            
-        }else if(parseInt(qdt) >= 141 ){
-            
-            cxResultado.innerHTML='Diabetes' 
-                if(  cxRes.classList.contains('normal') || cxRes.classList.remove('elevado')){
-                    cxRes.classList.remove('normal')
-                    cxRes.classList.remove('elevado')    
-                    cxRes.classList.add('diabetes')
-                }
-                
-        }
-             
-              
-        
-            
-    
-
-    }else{
-        alert('Preencha o campo')
-
-
-
-    }
-
+      if(qdt < 100){
+        cxRes.innerHTML='Normal'
+        cxRes.classList.add('normal')
+      }
+      if(qdt >= 100  &&  qdt <= 140){
+        cxRes.innerHTML='Elevado'
+        cxRes.classList.add('elevado')
+      }
+      if(qdt > 140 ){
+        cxRes.innerHTML='Diabetes'
+        cxRes.classList.add('diabetes')
+      }
+}else{
+    cxRes.innerHTML='Preencha o campo'
+    cxRes.classList.add('diabetes')
+}
   
+}
+ 
+function resetar(){
+
+    cxRes.classList.remove('normal')
+    cxRes.classList.remove('elevado')    
+    cxRes.classList.remove('diabetes')
+    inputQdt.value=''
+    cxRes.innerHTML=''
+
+
+
 }

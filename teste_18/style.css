@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: arial;
+}
+
+.container{
+    height: 100vh;
+    background-color: rgba(15, 6, 6, 0.97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-app{
+    background-color: rgb(125, 93, 44);
+    width: 500px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    height: 350px;
+}
+
+.cx-inputs{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.cx-inputs input[type='radio']{
+    height: 20px;
+    width: 20px;
+}
+.cx-inputs .temp{
+   margin-left: 10px;
+}
+.cx-inputs input[type='number']{
+    padding: 22px;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    border: none;
+    outline: 0;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+input[type='number']:focus{
+    outline: 2px solid blue;
+}
+
+button{
+    padding: 10px;
+   width: 100%;
+   padding: 15px;
+   font-size: 15px;
+   border-radius: 10px;
+   border: none;
+   color: white;
+   background-color: rgb(20, 66, 20);
+   box-shadow: 5px 5px rgb(12, 47, 12);
+}
+button:hover{
+    background-color: rgb(34, 94, 34);
+    box-shadow: 5px 5px rgb(26, 78, 26);
+}
+
+.cx{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.oculto{
+    display: none;
+}
+.visivel{
+  display: flex;
+  background-color: rgb(37, 37, 114);
+  border-radius: 5px;
+  box-shadow: 10px 10px rgb(26, 26, 94);
+  padding: 45px;
+  margin-top:45px;
+  margin-bottom:45px;
+  color: white;
+}
+
+.erro{
+    display: flex;
+    background-color: rgb(122, 35, 61);
+    border-radius: 5px;
+    box-shadow: 10px 10px rgb(86, 19, 38);
+    padding: 45px;
+    margin-top:45px;
+    margin-bottom:45px;
+    color: white;
+}
+
+@media screen and (max-width:800px){
+    .container-app{
+        width: 90vw;
+    }
+}

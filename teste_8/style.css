@@ -96,10 +96,13 @@ background-color:rgb(25, 70, 133);
 box-shadow: 5px 5px rgb(13, 41, 80);;
 }
 
-.res{
-    margin: 20px;
-    font-size: 18px;
+.oculto{
     display: none;
+}
+.res{
+    width: 100%;
+    margin-top: 25px;
+    font-size: 18px;
     flex-direction: column;
     box-shadow: 5px 5px rgb(170, 168, 168);
     background-color: #eee;

@@ -2,93 +2,94 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .container{
-    width: 100vw;
-    height: 100vh;
+    background-color: rgb(10, 14, 52);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.797);
+    height: 100vh;
 }
 
 .container-app{
-   
-    height: 500px;
-    width: 600px;
-    background-color: #3e1559;
-    border-radius: 15px;
-    padding:20px;
-    box-shadow: 0 0 10px ;
-}
-.title{
-    text-align: center;
-    color: #fffdfe;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-.cx-rel{
-    background-color: rgba(0, 0, 0, 0.693);
-    padding: 15px;
+    background-color: rgb(22, 78, 102);
+    height: 230px;
+    padding: 35px;
+    width: 500px;
     border-radius: 10px;
-   font-size: 35px;
-   text-align: center;
-   color: red;
 }
 
-
-.cx-btns{
+.seg{
+  
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.btn-func{
-flex: 1;
-padding: 10px;
-background-color: #561481;
-margin-left: 5px;
-margin-right: 5px;
-border-radius: 10px;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top:20px;
-box-shadow: 5px 5px #471767;
+input{
+    color: green;
+    font-size: 20px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 3px;
+    background-color: rgb(100, 100, 163);
+    border: none;
 }
-.btn-func img{
-width: 50px;
-height: 50px;
+input::placeholder{
+    color: rgb(74, 108, 74);
+}
+input:focus{
+    outline: 3px solid rgb(57, 57, 177);
+}
+.cx-btns{
+    margin-top: 15px;
+    display: flex;
+}
+
+button{
+    color: white;
+    font-size: 20px;
+    flex: 1;
+    width: 30%;
+    border-radius: 5px;
+    padding: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
 
 }
 
-.btn-func:hover{
-    background-color: #87639f;
-    box-shadow: 5px 5px #76578a;
+.on{
+    background-color: rgb(20, 97, 20);
+    box-shadow: 5px 5px rgb(22, 86, 22);
+}
+.on:hover{
     cursor: pointer;
+    background-color: rgb(48, 200, 48);
+    box-shadow: 5px 5px rgb(15, 138, 15);
 }
 
-@media screen and (max-width:950px){
-    .container-app{
-        width: 90vw;
-    }
-    .cx-btns{
-        width: 80vw;
-    }
-    .btn-func img{
-        width: 30px;
-        height: 30px;
-        
-        }
+.off{
+    cursor: pointer;
+    background-color: rgb(97, 20, 29);
+    box-shadow: 5px 5px rgb(81, 16, 16);
+}
+.off:hover{
+    background-color: rgb(164, 31, 42);
+    box-shadow: 5px 5px rgb(125, 14, 14);
 }
 
-@media screen and (max-width:300px){
-    .container-app{
-         margin-top: 80px;
-    }
-    .cx-btns{
-        flex-direction: column;
-    }
+.oculto{
+    display: none;
+}
+.visivel{
+    background-color: #eee;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 40px;
 }
